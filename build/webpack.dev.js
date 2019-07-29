@@ -8,11 +8,6 @@ module.exports = common.map(config => merge(config, {
   mode: 'development',
   // 生成SourceMap文件模式
   devtool: 'inline-source-map',
-  // 本地服务器 配置
-  devServer: {
-    // 告诉服务器从哪里提供内容。只有在你想要提供静态文件时才需要。
-    // contentBase: '../dist'
-  },
   plugins: [
     // DefinePlugin插件实现多环境下配置切换
     new webpack.DefinePlugin({
